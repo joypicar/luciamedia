@@ -1,0 +1,26 @@
+.DS_Store
+.claude/
+
+# Dependencies
+node_modules/
+website/node_modules/
+
+# Next.js build output
+.next/
+out/
+website/.next/
+website/out/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Local env
+.env*
+
+# TypeScript
+*.tsbuildinfo
+
+# Local source assets are kept outside the deploy repo.
+raw-assets/
