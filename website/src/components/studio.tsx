@@ -1,10 +1,10 @@
 import { Reveal } from "./reveal";
 
 const STATS = [
-  { value: "9 yrs", label: "Behind the lens" },
-  { value: "120+", label: "Films delivered" },
-  { value: "30+", label: "Brands & studios" },
-  { value: "4", label: "Continents shot" },
+  { value: "10+", label: "Years in media" },
+  { value: "2", label: "Feature films" },
+  { value: "7+", label: "Core services" },
+  { value: "Global", label: "Client experience" },
 ];
 
 export function Studio() {
@@ -22,18 +22,15 @@ export function Studio() {
           <div className="lg:col-span-8">
             <Reveal>
               <h2 className="text-section font-display uppercase">
-                We&apos;re named for{" "}
-                <span className="text-accent">light</span> — because
-                that&apos;s what we shape.
+                Illuminate your <span className="text-accent">story</span>.
               </h2>
             </Reveal>
             <Reveal delay={0.1}>
               <p className="mt-10 max-w-2xl text-lg leading-relaxed text-fg/70">
-                Lucia is a small studio with a wide range. We move between
-                cinema-grade production and nimble social work without losing
-                the craft — directing, shooting, scoring and grading every
-                frame in-house. The result is work that feels considered, never
-                templated.
+                Lucia Multimedia is a film, video and content production studio
+                built for stories that need craft, clarity and momentum. We
+                work across concept development, production and post, shaping
+                projects for brands, institutions and independent filmmakers.
               </p>
             </Reveal>
           </div>
@@ -41,9 +38,10 @@ export function Studio() {
           <div className="lg:col-span-4 lg:pt-2">
             <Reveal delay={0.15}>
               <p className="max-w-sm text-base leading-relaxed text-muted">
-                We partner with brands, agencies and artists from first
-                conversation to final master — and we keep the room small so
-                the idea stays loud.
+                From script to screen, the studio pairs production discipline
+                with cinematic instincts: strong project management, sharp
+                storytelling and a network of collaborators who know how to
+                make images carry meaning.
               </p>
             </Reveal>
           </div>

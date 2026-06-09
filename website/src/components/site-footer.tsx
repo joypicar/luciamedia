@@ -4,6 +4,7 @@ const LINKS = [
   { label: "Work", href: "#work" },
   { label: "Studio", href: "#studio" },
   { label: "Services", href: "#services" },
+  { label: "Team", href: "#team" },
   { label: "Contact", href: "#contact" },
 ];
 
@@ -44,7 +45,7 @@ export function SiteFooter() {
 
         <div className="mt-20 flex flex-col gap-4 border-t border-line pt-8 text-xs uppercase tracking-[0.18em] text-muted sm:flex-row sm:items-center sm:justify-between">
           <p>© {year} Lucia Multimedia — All rights reserved</p>
-          <p>Film &amp; Motion Studio · Light becomes story</p>
+          <p>Film &amp; Motion Studio · Illuminate your story</p>
         </div>
       </div>
     </footer>

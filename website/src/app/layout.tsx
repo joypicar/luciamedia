@@ -23,32 +23,35 @@ const SITE_URL = "https://luciamultimedia.com";
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "Lucia Multimedia — Film, Motion & Storytelling",
+    default: "Lucia Multimedia — Illuminate Your Story",
     template: "%s — Lucia Multimedia",
   },
   description:
-    "Lucia Multimedia is a film and motion studio turning light into story — video production, motion design, photography and creative direction for brands.",
+    "Lucia Multimedia is a Manila-based film, video and content production studio offering production, motion, photography, creative direction, post, podcast production and script development.",
   keywords: [
     "Lucia Multimedia",
     "video production",
     "film studio",
+    "content production",
     "motion design",
     "photography",
+    "podcast production",
+    "scriptwriting",
     "brand films",
     "creative direction",
   ],
   openGraph: {
-    title: "Lucia Multimedia — Film, Motion & Storytelling",
+    title: "Lucia Multimedia — Illuminate Your Story",
     description:
-      "A film and motion studio turning light into story. Video, motion, photography and creative direction.",
+      "Film, video and content production for brands, institutions and filmmakers.",
     url: SITE_URL,
     siteName: "Lucia Multimedia",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Lucia Multimedia — Film, Motion & Storytelling",
-    description: "A film and motion studio turning light into story.",
+    title: "Lucia Multimedia — Illuminate Your Story",
+    description: "Film, video and content production. Illuminate your story.",
   },
 };
 

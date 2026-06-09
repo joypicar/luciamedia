@@ -3,33 +3,38 @@ import { Reveal } from "./reveal";
 const SERVICES = [
   {
     no: "01",
-    title: "Film & Video Production",
-    copy: "Brand films, commercials and documentary. Concept, crew and camera — directed end to end.",
+    title: "Film and Video Production",
+    copy: "End-to-end production for films, branded content, corporate video and documentary work.",
   },
   {
     no: "02",
     title: "Motion & Animation",
-    copy: "Title sequences, 2D/3D motion and design systems that move. Story told in frames per second.",
+    copy: "Motion graphics, animated assets and visual systems that help stories move across platforms.",
   },
   {
     no: "03",
     title: "Photography",
-    copy: "Campaign, product and editorial stills shot alongside motion, so the look stays one look.",
+    copy: "Editorial, campaign and production photography with a consistent visual point of view.",
   },
   {
     no: "04",
     title: "Creative Direction",
-    copy: "The idea before the camera. Positioning, narrative and art direction for the whole campaign.",
+    copy: "Narrative, art direction and creative supervision from early idea to final execution.",
   },
   {
     no: "05",
-    title: "Post & Colour",
-    copy: "Edit, sound design, original score and a finishing grade — the polish that earns the play.",
+    title: "Post Production",
+    copy: "Editing, finishing and delivery support that brings the material into its strongest final form.",
   },
   {
     no: "06",
-    title: "Live & Events",
-    copy: "Multi-cam capture and same-day edits for launches, performances and broadcast moments.",
+    title: "Podcast Production",
+    copy: "Production support for audio and video podcasts, from planning through recording and edit.",
+  },
+  {
+    no: "07",
+    title: "Script Development & Scriptwriting",
+    copy: "Story development, scripting and writing support for films, branded content and campaigns.",
   },
 ];
 
@@ -49,8 +54,8 @@ export function Services() {
           </Reveal>
           <Reveal delay={0.1}>
             <p className="max-w-sm text-base leading-relaxed text-muted">
-              One studio, the full pipeline. Engage us for a single craft or
-              the whole production.
+              Engage us for one part of the process or the whole pipeline:
+              development, production, post and platform-ready delivery.
             </p>
           </Reveal>
         </div>

@@ -13,11 +13,11 @@ export function Contact() {
 
         <Reveal delay={0.05}>
           <h2 className="text-hero font-display uppercase">
-            Let&apos;s make
+            Illuminate
             <br />
-            something worth
+            your
             <br />
-            <span className="text-accent">watching.</span>
+            <span className="text-accent">story.</span>
           </h2>
         </Reveal>
 
@@ -35,9 +35,9 @@ export function Contact() {
           <Reveal delay={0.08}>
             <p className="eyebrow mb-4">Studio</p>
             <p className="text-xl leading-relaxed text-fg/70 md:text-2xl">
-              Los Angeles, CA
+              Manila, Philippines
               <br />
-              <span className="text-muted">Shooting worldwide</span>
+              <span className="text-muted">Producing worldwide</span>
             </p>
           </Reveal>
 

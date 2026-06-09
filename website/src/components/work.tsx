@@ -6,7 +6,7 @@ import { Reveal } from "./reveal";
 type Project = {
   title: string;
   category: string;
-  year: string;
+  note: string;
   /** Flat editorial color used until real project stills are added. */
   surface: string;
   span: "wide" | "tall" | "normal";
@@ -14,41 +14,43 @@ type Project = {
 
 const PROJECTS: Project[] = [
   {
-    title: "Aurelia — The Atelier Film",
-    category: "Brand Film · Direction",
-    year: "2025",
+    title: "Malamaya (The Color of Ash)",
+    category: "Feature Film",
+    note: "Directed and produced by Danica Sta. Lucia; finalist at the 15th Cinemalaya Film Festival in 2019.",
     surface: "bg-[#2b160b]",
     span: "wide",
   },
   {
-    title: "Nokterne",
-    category: "Music Video",
-    year: "2025",
+    title: "A Short History of a Few Bad Things",
+    category: "Feature Film",
+    note: "Keith Deligero's feature received a special jury award at Cinema One Originals.",
     surface: "bg-[#1f1f1d]",
     span: "normal",
   },
   {
-    title: "Field Notes",
-    category: "Documentary Series",
-    year: "2024",
+    title: "Babylon",
+    category: "Short Film",
+    note: "Winner of Best Film at QCinema International Film Festival and competitor at the 2018 Berlinale.",
     surface: "bg-[#24160d]",
     span: "tall",
   },
   {
-    title: "Vantage Mobility",
-    category: "Commercial · Motion",
-    year: "2024",
+    title: "Days Of The New",
+    category: "Short Film",
+    note: "Premiered at the Bucheon International Fantastic Film Festival in South Korea.",
     surface: "bg-[#191918]",
     span: "normal",
   },
   {
-    title: "Solstice Festival",
-    category: "Live Capture",
-    year: "2024",
+    title: "Sample Works",
+    category: "Reel",
+    note: "Danica and Keith sample works available on request. Links to follow.",
     surface: "bg-[#33180a]",
     span: "wide",
   },
 ];
+
+const CLIENTS = ["Thales", "Microsoft", "Google Cloud", "Google Workspace", "World Bank Philippines", "Globe Telecom", "Engie", "NEC", "5:00 Films"];
 
 const spanClass: Record<Project["span"], string> = {
   wide: "md:col-span-2 aspect-[16/10] md:aspect-[2/1]",
@@ -67,7 +69,7 @@ export function Work() {
           <Reveal>
             <p className="eyebrow mb-6">Selected Work</p>
             <h2 className="text-section font-display uppercase">
-              Recent frames
+              Works
             </h2>
           </Reveal>
           <Reveal delay={0.1}>
@@ -75,7 +77,7 @@ export function Work() {
               href="#contact"
               className="link-underline font-display text-sm uppercase tracking-[0.2em] text-fg/70"
             >
-              Request the full reel →
+              Request sample works →
             </a>
           </Reveal>
         </div>
@@ -100,12 +102,9 @@ export function Work() {
                 />
 
                 <div className="relative flex h-full flex-col justify-between p-7 md:p-9">
-                  <div className="flex items-start justify-between">
+                  <div className="flex items-start justify-between gap-6">
                     <span className="text-xs uppercase tracking-[0.22em] text-fg/55">
                       {p.category}
-                    </span>
-                    <span className="font-display text-xs tracking-[0.2em] text-fg/40">
-                      {p.year}
                     </span>
                   </div>
 
@@ -113,13 +112,16 @@ export function Work() {
                     <h3 className="font-display text-2xl uppercase leading-tight md:text-4xl">
                       {p.title}
                     </h3>
+                    <p className="mt-4 max-w-xl text-sm leading-relaxed text-fg/60 md:text-base">
+                      {p.note}
+                    </p>
                     <motion.span
                       variants={{ hover: { opacity: 1, x: 0 } }}
                       initial={{ opacity: 0, x: -8 }}
                       transition={{ duration: 0.5 }}
                       className="mt-4 inline-block text-sm uppercase tracking-[0.2em] text-accent"
                     >
-                      View project →
+                      Inquire →
                     </motion.span>
                   </div>
                 </div>
@@ -127,6 +129,17 @@ export function Work() {
             </Reveal>
           ))}
         </div>
+
+        <Reveal delay={0.15}>
+          <div className="mt-24 border-t border-line pt-10">
+            <p className="eyebrow mb-8">Clients</p>
+            <ul className="flex flex-wrap gap-x-8 gap-y-4 text-xl leading-none text-fg/70 md:text-3xl">
+              {CLIENTS.map((client) => (
+                <li key={client}>{client}</li>
+              ))}
+            </ul>
+          </div>
+        </Reveal>
       </div>
     </section>
   );

@@ -1,5 +1,6 @@
 .DS_Store
 .claude/
+.playwright-mcp/
 
 # Dependencies
 node_modules/

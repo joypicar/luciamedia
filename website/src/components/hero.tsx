@@ -53,7 +53,7 @@ export function Hero() {
             film is the visual hero, so the headline isn't shown to avoid
             colliding with the animated wordmark in the video. */}
         <h1 className="sr-only">
-          Lucia Multimedia — light becomes story. A film &amp; motion studio.
+          Lucia Multimedia — illuminate your story.
         </h1>
 
         <motion.p
@@ -62,7 +62,7 @@ export function Hero() {
           transition={{ duration: 0.8, delay: 0.2, ease }}
           className="eyebrow"
         >
-          Film&nbsp;&nbsp;·&nbsp;&nbsp;Motion&nbsp;&nbsp;·&nbsp;&nbsp;Photography
+          Film&nbsp;&nbsp;·&nbsp;&nbsp;Motion&nbsp;&nbsp;·&nbsp;&nbsp;Story
         </motion.p>
 
         <motion.div
@@ -72,8 +72,8 @@ export function Hero() {
           className="mt-8 flex flex-col gap-8 sm:flex-row sm:items-end sm:justify-between"
         >
           <p className="max-w-xl text-lg leading-relaxed text-fg/80 md:text-2xl">
-            A film &amp; motion studio. We craft the moving image for brands
-            that have something worth watching.
+            Illuminate your story. Lucia Multimedia crafts film, motion,
+            photography and content for brands, institutions and filmmakers.
           </p>
           <a
             href="#work"

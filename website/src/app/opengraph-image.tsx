@@ -1,6 +1,6 @@
 import { ImageResponse } from "next/og";
 
-export const alt = "Lucia Multimedia — Film, Motion & Storytelling";
+export const alt = "Lucia Multimedia — Illuminate Your Story";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 export const dynamic = "force-static";
@@ -56,9 +56,9 @@ export default function OpengraphImage() {
             textTransform: "uppercase",
           }}
         >
-          <span>Light</span>
+          <span>Illuminate</span>
           <span>
-            becomes <span style={{ color: "#f26b1f" }}>story.</span>
+            your <span style={{ color: "#f26b1f" }}>story.</span>
           </span>
         </div>
         <div
