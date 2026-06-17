@@ -26,6 +26,18 @@ const TEAM = [
     ],
     sample: "Keith sample works — to follow",
   },
+  {
+    role: "Production Head",
+    name: "Jero Raguini",
+    image: null,
+    imageAlt: "Portrait of Jero Raguini",
+    bio: [
+      "Jero Raguini has over 18 years of experience in video production and animation. He has directed and overseen numerous high-profile campaigns for global brands including Microsoft, HSBC, ServiceNow and the British Council.",
+      "His extensive portfolio spans commercial productions, corporate media and cutting-edge motion design.",
+      "Outside of his commercial and creative work, he is an active member of the local sports community, regularly competing in regional tennis tournaments.",
+    ],
+    sample: "Jero sample works — to follow",
+  },
 ];
 
 export function Team() {
@@ -64,15 +76,26 @@ export function Team() {
                   index % 2 === 1 ? "md:order-2" : ""
                 }`}
               >
-                <div className="relative aspect-[4/3] overflow-hidden bg-bg-soft md:aspect-[3/4]">
-                  <Image
-                    src={`${basePath}${member.image}`}
-                    alt={member.imageAlt}
-                    fill
-                    sizes="(min-width: 768px) 40vw, 100vw"
-                    className="object-cover grayscale"
-                  />
-                </div>
+                {member.image ? (
+                  <div className="relative aspect-[4/3] overflow-hidden bg-bg-soft md:aspect-[3/4]">
+                    <Image
+                      src={`${basePath}${member.image}`}
+                      alt={member.imageAlt}
+                      fill
+                      sizes="(min-width: 768px) 40vw, 100vw"
+                      className="object-cover grayscale"
+                    />
+                  </div>
+                ) : (
+                  <div
+                    aria-label={member.imageAlt}
+                    className="flex aspect-[4/3] items-center justify-center bg-bg-soft md:aspect-[3/4]"
+                  >
+                    <span className="font-display text-[30vw] uppercase leading-none text-fg/10 md:text-[18vw] lg:text-[13vw]">
+                      JR
+                    </span>
+                  </div>
+                )}
               </Reveal>
 
               <Reveal
@@ -99,15 +122,6 @@ export function Team() {
             </article>
           ))}
         </div>
-
-        <Reveal delay={0.15}>
-          <div className="mt-16 bg-bg-soft p-8 md:p-10">
-            <p className="eyebrow mb-4">Jero</p>
-            <p className="text-xl leading-relaxed text-fg/70 md:text-2xl">
-              To follow.
-            </p>
-          </div>
-        </Reveal>
       </div>
     </section>
   );
