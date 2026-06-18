@@ -29,7 +29,7 @@ const TEAM = [
   {
     role: "Production Head",
     name: "Jero Raguini",
-    image: null,
+    image: "/team/jero-raguini.jpg",
     imageAlt: "Portrait of Jero Raguini",
     bio: [
       "Jero Raguini has over 18 years of experience in video production and animation. He has directed and overseen numerous high-profile campaigns for global brands including Microsoft, HSBC, ServiceNow and the British Council.",
@@ -64,49 +64,25 @@ export function Team() {
           </Reveal>
         </div>
 
-        <div className="grid gap-16 lg:gap-20">
+        <div className="grid gap-8 lg:grid-cols-3">
           {TEAM.map((member, index) => (
             <article
               key={member.name}
-              className="grid gap-8 md:grid-cols-12 md:items-start"
+              className="bg-bg-soft p-8 md:p-10"
             >
-              <Reveal
-                delay={0.05}
-                className={`md:col-span-5 ${
-                  index % 2 === 1 ? "md:order-2" : ""
-                }`}
-              >
-                {member.image ? (
-                  <div className="relative aspect-[4/3] overflow-hidden bg-bg-soft md:aspect-[3/4]">
+              <Reveal delay={0.08 * index}>
+                <div>
+                  <div className="relative mx-auto mb-8 aspect-square w-28 overflow-hidden rounded-full bg-bg md:float-left md:mx-0 md:mb-5 md:mr-6 md:w-32 lg:w-28 xl:w-32">
                     <Image
                       src={`${basePath}${member.image}`}
                       alt={member.imageAlt}
                       fill
-                      sizes="(min-width: 768px) 40vw, 100vw"
+                      sizes="(min-width: 1280px) 128px, (min-width: 768px) 128px, 112px"
                       className="object-cover grayscale"
                     />
                   </div>
-                ) : (
-                  <div
-                    aria-label={member.imageAlt}
-                    className="flex aspect-[4/3] items-center justify-center bg-bg-soft md:aspect-[3/4]"
-                  >
-                    <span className="font-display text-[30vw] uppercase leading-none text-fg/10 md:text-[18vw] lg:text-[13vw]">
-                      JR
-                    </span>
-                  </div>
-                )}
-              </Reveal>
-
-              <Reveal
-                delay={0.12}
-                className={`md:col-span-7 ${
-                  index % 2 === 1 ? "md:order-1" : ""
-                }`}
-              >
-                <div className="bg-bg-soft p-8 md:p-12">
                   <p className="eyebrow mb-6">{member.role}</p>
-                  <h3 className="font-display text-4xl uppercase leading-none md:text-6xl">
+                  <h3 className="font-display text-4xl uppercase leading-none md:text-[2.75rem]">
                     {member.name}
                   </h3>
                   <div className="mt-8 grid gap-5 text-base leading-relaxed text-fg/68 md:text-lg">
